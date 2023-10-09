@@ -8,11 +8,15 @@
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     
     <body style='margin : 0px; overflow: hidden;'>
+        G=1<last two digits of your roll number> 
+        G=2<last two digits of your roll number>
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4;'>
 
         <a-marker type='barcode' value='99'>
-            <a-box position='0 1 0' color="yellow"></a-box>
+            <a-cone position='0 1 0' color="green"></a-cone>
+            <a-cylinder position='0 1 0' color="yellow"></a-cylinder>a-cylinder>
+            
         </a-marker>
 
 <a-marker type='barcode' value=’22’>
